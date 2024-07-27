@@ -1,0 +1,29 @@
+.left{
+    background-color: hotpink;
+    width: 50%;
+    height: 600px;
+    display: grid;grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 115px 115px 115px 115px 115px;
+    grid-gap: 5px;
+    float: left;
+}
+.right{
+    background-color: aqua;
+    width: 49.5%;
+    height: 600px;
+    float: right;
+    justify-content: center;
+    display: flex;
+}
+@media(max-width: 600px){
+    .left,.right{
+        width: 100px;
+    }
+    .parent{
+        flex-direction: column-reverse;
+    }
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
